@@ -1,6 +1,10 @@
 # webpack-dev-server
 webpack-dev-server basic implementation and points to notice.
 
+install the webpack and other dependencies on your system.
+command to run: webpack-dev-server
+server-url is localhost:8080/webpack-dev-server or localhost:8080
+
 ------------------------------------------BASIC configuration-----------------------------------------------
 
 - "webpack" is command to run "webpack.config.js" file.
@@ -9,9 +13,8 @@ webpack-dev-server basic implementation and points to notice.
 - But with "webpack" we can only do the actions, need to open the root file(index.html) manually
 - use webpack --watch to continuously check the changes in the files.
 - or use "watch: true" in config file.
-
-- "webpack-dev-server" create server for you, read index.html file automatically.
-- run the configuration in "webpack.config.js".  
+- "webpack-dev-server" command create server for you and read index.html file automatically.
+- "webpack-dev-server" command run the configuration in "webpack.config.js".  
 - it is checking for the changes in the file by default, no need to give "watch: true" or "--watch" in "webpack.config.js" file.
 - it is not writting output file(bundle.js) to the disk, rather reading from the memory.
 - so, it won't create "bundle.js" file to the disk, we still need to run webpack to write it on the disk.
